@@ -1,0 +1,42 @@
+
+:root{
+    --clr-primary:black;
+    --clr-neutral:white;
+
+    --top-p:2rem;
+    --side-pd:2rem;
+}
+
+
+body{
+    background-color: rgb(171, 147, 147);
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.grid-container{
+    padding: var(--top-p) var(--side-pd);
+}
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
+    gap: var(--side-pd);
+}
+
+.grid-content .grid-item{
+    display: grid;
+    background-color: var(--clr-neutral);
+    height: 28.4rem;
+}
+
+.stack>*{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.product-details{
+    background-color: aliceblue;
+}
